@@ -23,13 +23,11 @@
         <div class="container clearfix">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12">
-              <p class="roboto" style="font-size: 40px;">Welcome to</p>
-              <h1><span class="bold">Our Safety</span></h1>
-              <p class="roboto">Let's make ourselves safer</p>
+              <h1><span class="bold">Contact Us</span></h1>
             </div>
           </div>
         </div>
-      </div><a href="#text" class="icon faa-float animated scroll-to"><i class="fa fa-angle-double-down"></i></a>
+      </div><a href="#contact" class="icon faa-float animated scroll-to"><i class="fa fa-angle-double-down"></i></a>
     </section>
     
     <header class="header">
@@ -41,9 +39,9 @@
             </div>
             <div id="navigation" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
             </div>
@@ -52,29 +50,54 @@
       </div>
     </header>
 
-    <section id="text" class="section-gray" style="background-color: #303030;">
+<section id="contact">
       <div class="container clearfix">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="heading" style="color: #ffffff;">Our Story</h2>
+            <h2 class="heading">Contact</h2>
             <div class="row">
-              <div class="col-sm-6">
-                <p style="font-size: 16px; color: #ffffff;">We are a group of students who regard gun violence as a premier, appalling issue and wish to aid in its prevention through a non-partisan approach promoting advanced methods upholding the principles of safety while diminishing the impact of guns.</p>
-
-            <p style="font-size: 16px; color: #ffffff;">With the current political climate, there is much disarray when it comes to amending gun violence. Democrats and Republicans continue to wrangle on their respective political stages on how to amend this issue while guns continue their subjugation on American Society. Approximately 30,000 American citizens die due to firearm related deaths and 70,000 are injured yearly, prompting some lawmakers to promote gun-control legislation. At the same time, there is much reluctance to adhere to gun-restricting laws as many firearm-holding citizens defend themselves with a platform based on responsibility and are not willing to give up their guns due to concerns about their safety. This conflict is fueled by powerhouses</p>
-
+              <div class="col-md-6">
+                <form id="contact-form" method="post" action="contact.php" class="contact-form form">
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="name">First Name *</label>
+                          <input type="text" name="name" id="name" placeholder="Enter your firstname" required="required" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="surname">Last Name *</label>
+                          <input type="text" name="surname" id="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">E-mail *</label>
+                      <input type="email" name="email" id="email" placeholder="Enter your  email" required="required" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message *</label>
+                      <textarea rows="4" name="message" id="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <input type="submit" value="Send message" class="btn btn-primary btn-block">
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div class="col-sm-6">
-                <p style="font-size: 16px; color: #ffffff;"> such as the NRA, who wield their colossal influence whenever public sentiment towards guns turns sour, making it seem impossible for a future in which there isn’t an average of one school shooting a week.</p>
-
-                <p style="font-size: 16px; color: #ffffff;">As a group of passionate students, we are appalled by this reality and know we have to take a stance. We wish to approach the issue of gun violence by promoting safety and, at the same time, the diminishment of firearms. Many companies and institutions are working towards developing technology, such as non-lethal weapons,  to aid in this mission and we hope to work with them in promoting safety. Through this approach, both sides of the aisle may be appealed as citizens can make up for a deficiency in safety through advanced technology and that technology could lead to fewer gun deaths. (I WANT THIS SENTENCE TO BE bolded) - We are neither Republicans nor Democrats in our mission, just Americans who wish to make a change.</p>
+              <div class="col-md-6">
+                <p>If you are interested in getting in touch with us, or if you would like to voice your opinions, questions, or concerns, do not hesitate to contact us! Feel free to be as open and truthful as you can be. We strive to improve this crucial and vital problem in society, and will do anything in our power to make your voice heard!</p>
+                <p>If you have the time or would like to be updated on a regular bases, please check out our social media! We try our best to update the community regarding what we are doing towards solving this problem. We may also have events and fundraisers, so feel free to follow us on our social media!</p>
+                <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="mailto:oursafetyusa@gmail.com" title="" class="email"><i class="fa fa-envelope"></i></a></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-   
+
     <footer>
       <div class="container">
         <div class="row copyright">
@@ -82,8 +105,8 @@
             <p class="roboto" style="font-size: 12px;">&copy;2018 Our Safety is an official 501(c)(4) nonprofit. Your donation is tax-deductible.</p>
           </div>
           <div class="col-md-6">
-            <p class="roboto" style="font-size: 12px; float: right;">Website Designed by <i class="fa fa-love"></i><a href="" style="color: 
-            #1dcaff; text-decoration: none;">Shiven Gupta</a></p>
+            <p class="wow fadeInUp" data-wow-delay="0.6s" style="float: right;">Website Designed by <i class="fa fa-love"></i><a href="" style="color: 
+            #1dcaff; text-decoration: none;">Shiven Gupta</a>
           </div>
         </div>
       </div>
