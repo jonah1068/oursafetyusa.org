@@ -501,28 +501,28 @@ p.social a.email {
   background-color: #4a7f45;
 }
 
-#fh5co-event {
+#involved {
   width: 100%;
   float: left;
 }
-#fh5co-event .display-t,
-#fh5co-event .display-tc {
+#involved .display-t,
+#involved .display-tc {
   height: 700px;
   display: table;
   width: 100%;
 }
-#fh5co-event .fh5co-heading h2 {
+#involved .involved-heading h2 {
   color: #fff;
   padding-top: 40px;
 }
-#fh5co-event .fh5co-heading span {
+#involved .involved-heading span {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 600;
 }
-#fh5co-event .overlay {
+#involved .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -531,17 +531,17 @@ p.social a.email {
   background: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
-  #fh5co-event {
+  #involved {
     height: inherit;
     padding: 7em 0;
   }
-  #fh5co-event .display-t,
-  #fh5co-event .display-tc {
+  #involved .display-t,
+  #involved .display-tc {
     height: inherit;
   }
 }
 
-#fh5co-event .event-wrap {
+#involved .event-wrap {
   border: 2px solid rgba(0, 0, 0, 0.5);
   background: rgba(0, 0, 0, 0,5);
   padding: 30px;
@@ -554,11 +554,11 @@ p.social a.email {
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-event .event-wrap {
+  #involved .event-wrap {
     margin-bottom: 10px;
   }
 }
-#fh5co-event .event-wrap h3 {
+#involved .event-wrap h3 {
   font-size: 20px;
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -567,16 +567,16 @@ p.social a.email {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-#fh5co-event .event-wrap p,
-#fh5co-event .event-wrap span {
+#involved .event-wrap p,
+#involved .event-wrap span {
   display: block;
   color: rgba(255, 255, 255, 0.8);
 }
-#fh5co-event .event-wrap i {
+#involved .event-wrap i {
   color: white;
   font-size: 20px;
 }
-#fh5co-event .event-wrap .event-col {
+#involved .event-wrap .event-col {
   width: 50%;
   float: left;
   margin-bottom: 30px;
