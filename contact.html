@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body data-spy="scroll" data-target="#navigation" data-offset="120">
    
@@ -29,7 +30,7 @@
     
     <header class="header">
       <div class="sticky-wrapper">
-        <div role="navigation" class="navbar navbar-default">
+        <div role="navigation" class="navbar navbar-default" id='nav_bar'>
           <div class="container">
             <div class="navbar-header">
               <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand scroll-to"><img src="img/logo.png" alt=""></a>
@@ -151,6 +152,7 @@
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
     <script src="js/jquery.cookie.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     $('a[href*="#"]')
       .not('[href="#"]')
@@ -180,6 +182,17 @@
           }
         }
       });
+      $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 650) {
+                $('#nav_bar').addClass('navbar-fixed-top');
+            }
+            if ($(window).scrollTop() < 651) {
+                $('#nav_bar').removeClass('navbar-fixed-top');
+            }
+        });
+    });
+    AOS.init()
   </script>
   </body>
 </html>
